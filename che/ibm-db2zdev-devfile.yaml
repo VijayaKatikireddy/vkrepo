@@ -7,7 +7,7 @@
 ---
   apiVersion: 1.0.0
   metadata:
-    generateName: IBM-Db2forZ-Developer-
+    generateName: IBM-Db2forZ-Developer-WkSp 
   projects:
     -
       name: ibm-db2forz-developerextension
