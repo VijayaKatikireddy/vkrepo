@@ -32,8 +32,6 @@ spec:
       - -c
       - ${PLUGIN_REMOTE_ENDPOINT_EXECUTABLE}
     volumes:
-    - mountPath: "/home/wazi/.zowe"
-      name: wazi
     - mountPath: "/home/wazi/.m2"
       name: m2
   extensions:
