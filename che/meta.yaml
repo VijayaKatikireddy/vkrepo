@@ -12,7 +12,7 @@
 
 apiVersion: v2
 publisher: ibm
-name: db2forzosdeveloperextension-0.1.0
+name: db2forzosdeveloperextension
 version: 0.1.0
 type: VS Code extension
 displayName: IBM Db2 for z/OS Developer Extension
