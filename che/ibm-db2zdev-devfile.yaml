@@ -17,8 +17,8 @@
   components:
     -
       type: chePlugin
-      reference: https://raw.githubusercontent.com/ibm/zopeneditor-about/master/che/plugins/z-open-editor.yaml
-      alias: ibm-z-open-editor
+      reference: https://raw.githubusercontent.com/VijayaKatikireddy/vkrepo/master/che/db2zdev.yaml
+      alias: ibm-Developer-Extension
     -
       #type: chePlugin
       #reference: https://raw.githubusercontent.com/ibm/zopeneditor-about/master/che/plugins/zowe.yaml
