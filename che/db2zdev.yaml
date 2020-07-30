@@ -4,9 +4,9 @@
 # Note to U.S. Government Users Restricted Rights:
 # Use, duplication or disclosure restricted by GSA ADP Schedule
 # Contract with IBM Corp.
-apiVersion: v0.1.0
+#apiVersion: v0.1.0
 publisher: IBM
-name: db2forzosdeveloperextension
+name: db2forzosdeveloperextension-0.1.0
 version: 0.1.0
 type: VS Code extension
 displayName: IBM Db2 for z/OS Developer Extension
