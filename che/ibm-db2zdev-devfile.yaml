@@ -10,10 +10,10 @@
     generateName: IBM-Db2forZ-Developer-WkSp 
   projects:
     -
-      name: ibm-db2forz-developerextension
+      name: ibm-db2forz-sqlreposample
       source:
         type: git
-        location: "https://github.com/IBM/db2forzosdeveloperextension-about.git"
+        location: "https://github.com/VijayaKatikireddy/sqlrepo.git"
   components:
     -
       type: chePlugin
