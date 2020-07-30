@@ -17,7 +17,7 @@ projects:
 components:
 -
   type: chePlugin
-  reference: https://raw.githubusercontent.com/VijayaKatikireddy/vkrepo/master/che/db2zdev.yaml
+  reference: https://raw.githubusercontent.com/VijayaKatikireddy/vkrepo/master/che/meta.yaml
   alias: ibm-Developer-Extension
 -
   type: dockerimage
