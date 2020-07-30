@@ -4,31 +4,24 @@
 # Note to U.S. Government Users Restricted Rights:
 # Use, duplication or disclosure restricted by GSA ADP Schedule
 # Contract with IBM Corp.
----
-  apiVersion: 1.0.0
-  metadata:
-    generateName: IBM-Db2forZ-Developer-WkSp 
-  projects:
-    -
-      name: ibm-db2forz-sqlreposample
-      source:
-        type: git
-        location: "https://github.com/VijayaKatikireddy/sqlrepo.git"
-  components:
-    -
-      type: chePlugin
-      reference: https://raw.githubusercontent.com/VijayaKatikireddy/vkrepo/master/che/db2zdev.yaml
-      alias: ibm-Developer-Extension
-    -
-      #type: chePlugin
-      #reference: https://raw.githubusercontent.com/ibm/zopeneditor-about/master/che/plugins/zowe.yaml
-      #alias: zowe
-    -
-      type: dockerimage
-      alias: ibmz
-      image: quay.io/eclipse/che-java11-gradle:nightly
-      memoryLimit: 512Mi
-      volumes:
-        - name: ibmzowe
-          containerPath: /home/user/.zowe
-      mountSources: true
+
+apiVersion: 1.0.0
+metadata:
+  generateName: ibm-
+projects:
+  -
+    name: ibm-db2forz-sqlreposample
+    source:
+      type: git
+      location: "https://github.com/VijayaKatikireddy/sqlrepo.git"
+components:
+-
+  type: chePlugin
+  reference: https://raw.githubusercontent.com/VijayaKatikireddy/vkrepo/master/che/db2zdev.yaml
+  alias: ibm-Developer-Extension
+-
+  type: dockerimage
+  alias: ibmz
+  image: quay.io/eclipse/che-java11-gradle:nightly
+  memoryLimit: 512Mi
+  mountSources: true
