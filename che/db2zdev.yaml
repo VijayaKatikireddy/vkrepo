@@ -1,0 +1,28 @@
+# Licensed Materials - Property of IBM
+# (C) Copyright IBM Corporation 2019. All Rights Reserved.
+#
+# Note to U.S. Government Users Restricted Rights:
+# Use, duplication or disclosure restricted by GSA ADP Schedule
+# Contract with IBM Corp.
+apiVersion: v1
+publisher: IBM
+name: db2forzosdeveloperextension
+version: latest
+type: VS Code extension
+displayName: IBM Db2 for z/OS Developer Extension
+title: IBM Z Open Editor, Language Support for COBOL and PL/I
+description: Provides language support for developing Db2 for z/OS SQL applications
+icon: https://www.eclipse.org/che/images/logo-eclipseche.svg
+repository: https://github.com/IBM/db2forzosdeveloperextension-about.git
+category: Language
+firstPublicationDate: "2020-28-07"
+spec:
+  #containers:
+  #- image: "docker.io/eclipse/che-remote-plugin-runner-java11:7.3.0"
+  #  name: vscode-ibm-zopeneditor
+  #  memoryLimit: "1500Mi"
+  #  volumes:
+  #  - mountPath: "/home/theia/.m2"
+  #    name: m2
+  extensions:
+  - https://github.com/VijayaKatikireddy/vkrepo/blob/master/db2forzosdeveloperextension-0.1.0.vsix
