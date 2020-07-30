@@ -1,0 +1,40 @@
+#
+# Copyright IBM Corporation 2020
+# This program and the accompanying materials are made
+# available under the terms of the Eclipse Public License 2.0
+# which is available at https://www.eclipse.org/legal/epl-2.0/
+#
+# SPDX-License-Identifier: EPL-2.0
+#
+# Contributors:
+#   IBM Corporation - implementation
+# VKnotes: get icon path for extension
+
+apiVersion: v1
+publisher: ibm
+name: db2forzosdeveloperextension
+version: 0.1.0
+type: VS Code extension
+displayName: IBM Db2 for z/OS Developer Extension
+title: IBM Db2 for z/OS Developer Extension, Language Support for SQL
+description: Provides language support for developing Db2 for z/OS SQL applications
+icon: https://www.eclipse.org/che/images/logo-eclipseche.svg
+repository: https://github.com/IBM/db2forzosdeveloperextension-about.git
+category: Language
+firstPublicationDate: "2020-28-07"
+spec:
+  containers:
+  - image: docker.io/ibmcom/wazi-code-codeready:latest
+    name: ibm-wazi
+    memoryLimit: "3000Mi"
+    args:
+      - sh
+      - -c
+      - ${PLUGIN_REMOTE_ENDPOINT_EXECUTABLE}
+    volumes:
+    - mountPath: "/home/wazi/.zowe"
+      name: wazi
+    - mountPath: "/home/wazi/.m2"
+      name: m2
+  extensions:
+  - https://github.com/VijayaKatikireddy/vkrepo/blob/master/db2forzosdeveloperextension-0.1.0.vsix
