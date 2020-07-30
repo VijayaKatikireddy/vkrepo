@@ -13,7 +13,7 @@ displayName: IBM Db2 for z/OS Developer Extension
 title: IBM Db2 for z/OS Developer Extension, Language Support for SQL
 description: Provides language support for developing Db2 for z/OS SQL applications
 icon: https://www.eclipse.org/che/images/logo-eclipseche.svg
-repository: https://github.com/IBM/db2forzosdeveloperextension-about.git
+repository: https://github.com/VijayaKatikireddy/vkrepo.git
 category: Language
 firstPublicationDate: "2020-28-07"
 spec:
