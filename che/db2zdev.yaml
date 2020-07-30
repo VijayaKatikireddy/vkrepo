@@ -10,7 +10,7 @@ name: db2forzosdeveloperextension
 version: latest
 type: VS Code extension
 displayName: IBM Db2 for z/OS Developer Extension
-title: IBM Z Open Editor, Language Support for COBOL and PL/I
+title: IBM Db2 for z/OS Developer Extension, Language Support for SQL
 description: Provides language support for developing Db2 for z/OS SQL applications
 icon: https://www.eclipse.org/che/images/logo-eclipseche.svg
 repository: https://github.com/IBM/db2forzosdeveloperextension-about.git
