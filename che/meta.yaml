@@ -35,4 +35,4 @@ spec:
     - mountPath: "/home/wazi/.m2"
       name: m2
   extensions:
-  - https://github.com/VijayaKatikireddy/vkrepo/blob/master/ibmdb2forzosdeveloperextension.vsix
+  - https://github.com/IBM/db2forzosdeveloperextension-about/releases/download/v0.1.0/db2forzosdeveloperextension-0.1.0.vsix
