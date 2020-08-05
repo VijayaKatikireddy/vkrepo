@@ -7,7 +7,7 @@
 
 apiVersion: 1.0.0
 metadata:
-  generateName: ibm-fordev
+  generateName: ibm-fordev-
 projects:
   -
     name: sqlrepo_sample
@@ -20,16 +20,16 @@ components:
   type: chePlugin
   reference: https://raw.githubusercontent.com/VijayaKatikireddy/vkrepo/master/che/db2zdev.yaml
   alias: ibm-db2z-Developer-Extension
-- mountSources: true
+- type: dockerimage
+  alias: wazi
+  image: docker.io/ibmcom/wazi-code-codeready@sha256:2caa8dc526a92014a9c27db9127c69142bb801059ecb2eef8aa641ec284d6915
+  mountSources: true
   memoryLimit: 512Mi
-  type: dockerimage
   volumes:
   - name: m2
     containerPath: /home/wazi/.m2
   - name: wazi
-    containerPath: /home/wazi/.zowe
-  alias: wazi
-  image: docker.io/ibmcom/wazi-code-codeready@sha256:2caa8dc526a92014a9c27db9127c69142bb801059ecb2eef8aa641ec284d6915
+    containerPath: /home/wazi/.zowe  
 - type: chePlugin
   id: ibm/wazi-development-client/1.0.0
   
