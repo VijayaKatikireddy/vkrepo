@@ -7,7 +7,7 @@
 
 apiVersion: 1.0.0
 metadata:
-  generateName: db2z-mavericks-vk-
+  generateName: db2zsql-mavericks-vk-
 projects:
   -
     name: sqlrepo_sample
