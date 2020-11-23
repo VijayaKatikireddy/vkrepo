@@ -18,4 +18,4 @@ category: Language
 firstPublicationDate: "2020-28-07"
 spec:
   extensions:
-  -  https://github.com/IBM/db2forzosdeveloperextension-about/releases/download/v0.1.1/db2forzosdeveloperextension-0.1.1.vsix
+  -  https://github.com/IBM/db2forzosdeveloperextension-about/releases/db2forzosdeveloperextension-0.5.1.vsix
