@@ -18,7 +18,7 @@ projects:
 components:
 -
   type: chePlugin
-  reference: https://raw.githubusercontent.com/VijayaKatikireddy/vkrepo/master/che/vsc051_meta.yaml
+  reference: https://raw.githubusercontent.com/VijayaKatikireddy/vkrepo/master/che/vsc051-meta.yaml
   alias: ibm-db2z-Developer-Extension
 - type: dockerimage
   alias: wazi
