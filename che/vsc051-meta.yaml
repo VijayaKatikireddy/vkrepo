@@ -1,34 +1,28 @@
 # Licensed Materials - Property of IBM
-# (C) Copyright IBM Corporation 2019, 2020. All Rights Reserved.
+# (C) Copyright IBM Corporation 2019. All Rights Reserved.
 #
 # Note to U.S. Government Users Restricted Rights:
 # Use, duplication or disclosure restricted by GSA ADP Schedule
 # Contract with IBM Corp.
-
-apiVersion: 1.0.0
-metadata:
-  generateName: ibm-vsc051-mavforteam-
-projects:
-  -
-    name: sqlrepo_sample
-    source:
-      type: git
-      location: "https://github.com/VijayaKatikireddy/sqlrepo.git"
-      branch: master
-components:
--
-  type: chePlugin
-  reference: https://raw.githubusercontent.com/VijayaKatikireddy/vkrepo/master/che/vsc051-meta.yaml
-  alias: ibm-db2z-Developer-Extension
-- type: dockerimage
-  alias: wazi
-  image: docker.io/ibmcom/wazi-code-codeready@sha256:2caa8dc526a92014a9c27db9127c69142bb801059ecb2eef8aa641ec284d6915
-  mountSources: true
-  memoryLimit: 512Mi
-  volumes:
-  - name: m2
-    containerPath: /home/wazi/.m2
-  - name: wazi
-    containerPath: /home/wazi/.zowe  
-- type: chePlugin
-  id: ibm/wazi-development-client/1.0.0
+apiVersion: v2
+publisher: IBM
+name: db2forzosdeveloperextension
+version: 0.1.0
+type: VS Code extension
+displayName: IBM Db2 for z/OS Developer Extension
+title: IBM Db2 for z/OS Developer Extension, Language Support for SQL
+description: Provides language support for developing Db2 for z/OS SQL applications
+icon: https://www.eclipse.org/che/images/logo-eclipseche.svg
+repository: https://github.com/VijayaKatikireddy/sqlrepo.git
+category: Language
+firstPublicationDate: "2020-28-07"
+spec:
+  #containers:
+  #- image: "docker.io/eclipse/che-remote-plugin-runner-java11:7.3.0"
+  #  name: vscode-ibm-zopeneditor
+  #  memoryLimit: "1500Mi"
+  #  volumes:
+  #  - mountPath: "/home/theia/.m2"
+  #    name: m2
+  extensions:
+  - https://github.com/VijayaKatikireddy/vkrepo/blob/master/vscode-db2forzosdeveloperextension-0.5.1.vsix
