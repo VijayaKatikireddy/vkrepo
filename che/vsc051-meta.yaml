@@ -25,4 +25,4 @@ spec:
   #  - mountPath: "/home/theia/.m2"
   #    name: m2
   extensions:
-  - https://github.com/VijayaKatikireddy/vkrepo/blob/master/vscode-db2forzosdeveloperextension-0.5.2.vsix
+  - https://github.com/IBM/db2forzosdeveloperextension-about/releases/download/v0.5.1/db2forzosdeveloperextension-0.5.1.vsix
