@@ -6,7 +6,7 @@
 # Contract with IBM Corp.
 apiVersion: v2
 publisher: IBM
-name: db2forzosdeveloperextension
+name: vscode-db2forzosdeveloperextension
 version: 0.5.1
 type: VS Code extension
 displayName: IBM Db2 for z/OS Developer Extension
