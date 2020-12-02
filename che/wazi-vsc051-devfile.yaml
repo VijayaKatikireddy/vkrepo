@@ -11,7 +11,7 @@ components:
     id: ibm/wazi-developer/1.1.0
     alias: wazi-developer
   - type: chePlugin
-    id: ibm/ibm-db2z-Developer-Extension/0.5.1
+    reference: https://raw.githubusercontent.com/VijayaKatikireddy/vkrepo/master/che/vsc051-meta.yaml
     alias: ibm-db2z-Developer-Extension
   - type: chePlugin
     id: ibm/wazi-debug/1.1.0
