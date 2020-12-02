@@ -1,0 +1,33 @@
+projects:
+  - name: db2developer-vscode
+    source:
+      type: git
+      location: "https://github.com/VijayaKatikireddy/sqlrepo.git"
+      branch: master
+metadata:
+  generateName: waziclient-vsc051
+components:
+  - type: chePlugin
+    id: ibm/wazi-developer/1.1.0
+    alias: wazi-developer
+  - type: chePlugin 
+    reference: https://raw.githubusercontent.com/VijayaKatikireddy/vkrepo/master/che/vsc051-meta.yaml
+    alias: ibm-db2z-Developer-Extension
+  - type: chePlugin
+    id: ibm/wazi-debug/1.1.0
+    alias: wazi-debug
+  - type: chePlugin
+    id: redhat/vscode-yaml/0.8.0
+    alias: vscode-yaml
+  - type: dockerimage
+    alias: wazi
+    image: >-
+      docker.io/ibmcom/wazi-code-codeready@sha256:fde1b1dc4117058f6e7d6f05876fb398c1f8b0b3291eea8c67134f6ea2688d26
+    memoryLimit: 512Mi
+    volumes:
+      - name: wazi
+        containerPath: /home/wazi/.zowe
+      - name: m2
+        containerPath: /home/wazi/.m2
+    mountSources: true
+apiVersion: 1.0.0
